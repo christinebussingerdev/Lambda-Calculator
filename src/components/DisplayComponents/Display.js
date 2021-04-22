@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
+import '../../CSS/index.css'
+export const Display = () => {
 
-const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+  const currentNumber = useState(0);
+    return <div className="display">{currentNumber}</div>;
 };
